@@ -13,9 +13,10 @@ function App() {
     <div className="App"></div>
 
     <Routes>
-    <Route  path='/Home' element={<Home />} />
+    
     <Route  path='/QuestionList' element={<QuestionList />} />
     <Route  path='/Compiler/:id' element={<Compiler />} />
+    <Route  path='*' element={<Home />} />
     </Routes>
     </BrowserRouter>
   );
